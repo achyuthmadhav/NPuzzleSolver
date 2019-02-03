@@ -16,13 +16,13 @@ This method searches the branches with the same cost. It is basically the A* alg
 Misplaced Tile Heuristic
 In this method, each non-blank element in the current state is compared to the goal state and if, it is different. the ‘h’ value is incremented. After traversing through the entire grid, the final ‘h’ value is set to that node. For example,
 Goal State:	1	2	3	Puzzle State:		1	2	4
-4	5	6				3	0	6
-7	8	0				7	8	5
+						4	5	6				3	0	6
+						7	8	0				7	8	5
 The underlined elements are the non-matching ones between puzzle state and goal state. The blank element in the puzzle state is ignored. Therefore, the misplaced tile heuristic is 3. The h(n) value for this puzzle state is set as 3.
 Manhattan Distance Heuristic
 This heuristic is calculated by finding the number of places the initial state of the element is away from its place in the goal state. This value is calculated for each element and then the sum of those values is set as the h(n) value for that state.
 Goal State:	1	2	3	Puzzle State:		1	2	4
-4	5	6				3	0	6
-7	8	0				7	8	5
+						4	5	6				3	0	6
+						7	8	0				7	8	5
 h4= 1 + 2 = 3, h3 = 1 + 2 = 3, h5 = 1 + 1 = 2
 Therefore h(n) for this state = 3 + 3 + 2 = 8
