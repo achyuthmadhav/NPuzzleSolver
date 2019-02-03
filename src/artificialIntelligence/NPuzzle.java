@@ -68,7 +68,7 @@ public class NPuzzle {
             			count++;
             		}
             		else
-            			diff = (GRID_SIZE - i) % 2;
+            			diff = (GRID_SIZE - i - 1) % 2;
             }
 		count = 0;
 		for(i=0; i<N; i++)
